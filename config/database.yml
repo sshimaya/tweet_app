@@ -30,3 +30,8 @@ development:
 # production:
 #   <<: *default
 #   database: db/production.sqlite3
+production:
+  <<: *default
+  dapter: postgresql
+  encoding: unicode
+  pool: 5
